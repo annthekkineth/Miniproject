@@ -96,6 +96,6 @@ app.use(express.static(path.join(__dirname,"/public")));
 
 app.use("/admin",adminrouter);
 app.use("/user",userrouter);
-app.listen(process.event.PORT || 3000,function(req,res){
+app.listen(process.env.PORT || 3000,function(req,res){
     console.log("Server started!");
 })
